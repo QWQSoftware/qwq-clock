@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+*.import
+
+# C# project files
+*.csproj
+*.sln
+
+# Godot 4+ specific ignores
+.godot/
+/android/

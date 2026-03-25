@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bvoenc3iol1aj"]
+
+[ext_resource type="Script" uid="uid://2k0ug342gcsr" path="res://qwq_clock.gd" id="1_g5wdx"]
+
+[node name="QWQClock" type="Control" unique_id=1097435931 node_paths=PackedStringArray("minute_label", "second_label", "millisecond_label", "minute_edit", "second_edit", "millisecond_edit")]
+custom_minimum_size = Vector2(440, 200)
+layout_mode = 3
+anchor_right = 0.38200003
+anchor_bottom = 0.30900002
+offset_right = -0.06402588
+offset_bottom = -0.23200989
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g5wdx")
+minute_label = NodePath("HBoxContainer/MarginContainer/MinuteLabel")
+second_label = NodePath("HBoxContainer/MarginContainer2/SecondLabel")
+millisecond_label = NodePath("HBoxContainer/MarginContainer3/MillisecondLabel")
+minute_edit = NodePath("HBoxContainer/MarginContainer/MinuteEdit")
+second_edit = NodePath("HBoxContainer/MarginContainer2/SecondEdit")
+millisecond_edit = NodePath("HBoxContainer/MarginContainer3/MillisecondEdit")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=335475821]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=1964333773]
+layout_mode = 2
+
+[node name="MinuteEdit" type="LineEdit" parent="HBoxContainer/MarginContainer" unique_id=375880972]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="MinuteLabel" type="Label" parent="HBoxContainer/MarginContainer" unique_id=1964042255]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 100
+text = "3"
+
+[node name="MinuteSecondSeperator" type="Label" parent="HBoxContainer" unique_id=1502141292]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = ":"
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer" unique_id=1584626825]
+layout_mode = 2
+
+[node name="SecondLabel" type="Label" parent="HBoxContainer/MarginContainer2" unique_id=1281954181]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 100
+text = "14"
+
+[node name="SecondEdit" type="LineEdit" parent="HBoxContainer/MarginContainer2" unique_id=64230413]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="SecondMillisecondSeperaor" type="Label" parent="HBoxContainer" unique_id=299465287]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "."
+
+[node name="MarginContainer3" type="MarginContainer" parent="HBoxContainer" unique_id=265641913]
+layout_mode = 2
+
+[node name="MillisecondEdit" type="LineEdit" parent="HBoxContainer/MarginContainer3" unique_id=71540837]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+
+[node name="MillisecondLabel" type="Label" parent="HBoxContainer/MarginContainer3" unique_id=1933290657]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 100
+text = "159"

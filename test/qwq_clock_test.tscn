@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://3vq0ajthdu6"]
+
+[ext_resource type="Script" uid="uid://dbqwye0f2wa0y" path="res://test/qwq_clock_test.gd" id="1_bawti"]
+[ext_resource type="PackedScene" uid="uid://bvoenc3iol1aj" path="res://qwq_clock.tscn" id="2_khtqs"]
+
+[node name="QWQClockTest" type="Node2D" unique_id=1751977093 node_paths=PackedStringArray("timer", "start_button", "stop_button", "reset_button")]
+script = ExtResource("1_bawti")
+timer = NodePath("QWQClock")
+start_button = NodePath("StartButton")
+stop_button = NodePath("StopButton")
+reset_button = NodePath("ResetButton")
+
+[node name="QWQClock" parent="." unique_id=1097435931 instance=ExtResource("2_khtqs")]
+offset_left = 305.0
+offset_top = 71.0
+offset_right = 745.0
+offset_bottom = 271.0
+
+[node name="StartButton" type="Button" parent="." unique_id=1931727164]
+offset_left = 378.0
+offset_top = 231.0
+offset_right = 424.0
+offset_bottom = 262.0
+text = "Start"
+
+[node name="StopButton" type="Button" parent="." unique_id=1927141441]
+offset_left = 472.0
+offset_top = 232.0
+offset_right = 515.0
+offset_bottom = 263.0
+text = "Stop"
+
+[node name="ResetButton" type="Button" parent="." unique_id=840829984]
+offset_left = 571.0
+offset_top = 233.0
+offset_right = 622.0
+offset_bottom = 264.0
+text = "Reset"
