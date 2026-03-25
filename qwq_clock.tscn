@@ -33,6 +33,7 @@ layout_mode = 2
 [node name="MinuteEdit" type="LineEdit" parent="HBoxContainer/MarginContainer" unique_id=375880972]
 visible = false
 layout_mode = 2
+theme_override_constants/minimum_character_width = 1
 theme_override_font_sizes/font_size = 100
 
 [node name="MinuteLabel" type="Label" parent="HBoxContainer/MarginContainer" unique_id=1964042255]
@@ -58,6 +59,7 @@ text = "14"
 [node name="SecondEdit" type="LineEdit" parent="HBoxContainer/MarginContainer2" unique_id=64230413]
 visible = false
 layout_mode = 2
+theme_override_constants/minimum_character_width = 2
 theme_override_font_sizes/font_size = 100
 
 [node name="SecondMillisecondSeperaor" type="Label" parent="HBoxContainer" unique_id=299465287]
@@ -71,6 +73,7 @@ layout_mode = 2
 [node name="MillisecondEdit" type="LineEdit" parent="HBoxContainer/MarginContainer3" unique_id=71540837]
 visible = false
 layout_mode = 2
+theme_override_constants/minimum_character_width = 3
 theme_override_font_sizes/font_size = 100
 
 [node name="MillisecondLabel" type="Label" parent="HBoxContainer/MarginContainer3" unique_id=1933290657]
